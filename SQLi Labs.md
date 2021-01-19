@@ -2,12 +2,13 @@
 
 First we have to set up sqli labs
 For that we can use the following commands
-install apache2 webserver by > sudo apt install apache2
+install apache2 webserver by > `sudo apt install apache2`
 install mysql by > sudo apt-get install mysql-srver
 install php7
 git clone the repository of the lab and start all the services.
 
-#LESS1
+### **LESS1**
+
 The website says,Please input the ID as parameter with numeric value.
 So we can input ?id=1 or 2,3,4,5.....
 when we put ' we get sql error 
