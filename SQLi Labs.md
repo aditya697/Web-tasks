@@ -1,4 +1,4 @@
-###**SQLi Labs**
+### **SQLi Labs**
 
 First we have to set up sqli labs
 For that we can use the following commands
