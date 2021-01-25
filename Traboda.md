@@ -25,3 +25,12 @@ Then we can see a ```/1w4ntn0r0b0tsh3r3.html``` by changing robots.txt to ```/1w
 We get the flag.
 
 ```FLAG:-inctfj{th3_r0b0_exclusi0n_pr0t0c0l}```
+
+# ***robo-auth***
+
+We are given a link. In the we inspect that page.
+
+In inspect if we open source, we can see username and password
+```username:- pwned and password:- 1337R0b0```
+
+```FLAG:-inctfj{1337R0b0_got_pwned}```
