@@ -1,10 +1,13 @@
 # ***SQLi Labs***
 
-First we have to set up sqli labs
-For that we can use the following commands
+First we have to set up sqli labs,For that we can use the following commands
+
 install apache2 webserver by > ````sudo apt install apache2````
+
 install mysql by > ````sudo apt-get install mysql-srver````
+
 install php7
+
 git clone the repository of the lab and start all the services.
 
 ## ***LESS1***
