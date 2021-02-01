@@ -54,3 +54,6 @@ F ag is at /give-me-the-flag.txt
 I bet you cannot access it
 ```
         
+By entering ``/give-me-the-flag.txt`` in the url we get the flag.
+
+```FLAG:-inctfj{wh3n_c0d3_f4ils_fl4g_sp3aks}```
