@@ -34,3 +34,11 @@ In inspect if we open source, we can see username and password
 ```username:- pwned and password:- 1337R0b0```
 
 ```FLAG:-inctfj{1337R0b0_got_pwned}```
+
+# ***HUMANIOD***
+
+We are given link of a page. By opening that and clicking ``/robots.txt`` in the url we get ``Disallow: /starbenboorbenbarben.html``
+
+By entering ``/starbenboorbenbarben.html`` in the url we get the flag.
+
+```FLAG:-flag{cr4wl3r5_4nd_cr33p3r5_d4ng3r}```
