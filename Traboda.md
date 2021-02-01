@@ -47,9 +47,10 @@ By entering ``/starbenboorbenbarben.html`` in the url we get the flag.
 
 We are given a link of a page. By opening that and looking at the source we can find a text ``TCBvbC4uLiBJIHRob3VnaHQgeW91IHdpbGwgbmV2ZXIgZmluZCBtZSAhIApGIGFnIGlzIGF0IC9naXZlLW1lLXRoZS1mbGFnLnR4dApJIGJldCB5b3UgY2Fubm90IGFjY2VzcyBpdA==`` which is in base64 .
 
-By doing base64 decodeing we get ```L ol... I thought you will never find me ! 
-                                    
-                                    F ag is at /give-me-the-flag.txt
-                                    
-                                    I bet you cannot access it```
+By doing base64 decodeing we get 
+```
+L ol... I thought you will never find me !                                     
+F ag is at /give-me-the-flag.txt
+I bet you cannot access it
+```
         
